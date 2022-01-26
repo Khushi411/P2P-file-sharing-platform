@@ -40,12 +40,12 @@ def handle_client(conn, addr):
 
         elif cmd == "LOGOUT":
             break
-        elif cmd == "HELP":
+        elif cmd == "MENU":
             data = "OK@"
             data += "LIST: List all the files from the server.\n"
             data += "UPLOAD <path>: Upload a file to the server.\n"
             data += "LOGOUT: Disconnect from the server.\n"
-            data += "HELP: List all the commands."
+            data += "MENU: List all the commands."
 
             conn.send(data.encode(FORMAT))
 
@@ -67,3 +67,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
