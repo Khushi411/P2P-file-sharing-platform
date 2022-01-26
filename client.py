@@ -24,7 +24,7 @@ def main():
         data = data.split(" ")
         cmd = data[0]
 
-        if cmd == "HELP":
+        if cmd == "MENU":
             client.send(cmd.encode(FORMAT))
         elif cmd == "LOGOUT":
             client.send(cmd.encode(FORMAT))
